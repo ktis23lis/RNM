@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_card_view"
+    android:layout_marginEnd="@dimen/margin_card_view"
+    android:layout_marginTop="@dimen/margin_card_view">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameEpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/name"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/episodeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/episode_e"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/nameEpTV"
+            app:layout_constraintTop_toBottomOf="@+id/episodeName" />
+
+        <TextView
+            android:id="@+id/airFateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/air_fate"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/episodeTV"
+            app:layout_constraintTop_toBottomOf="@+id/episodeTV" />
+
+        <TextView
+            android:id="@+id/episodeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintStart_toStartOf="@+id/nameEpTV"
+            app:layout_constraintTop_toBottomOf="@+id/nameEpTV"
+            tools:text="@string/name" />
+
+        <TextView
+            android:id="@+id/episodeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_top"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintBaseline_toBaselineOf="@+id/episodeTV"
+            app:layout_constraintStart_toEndOf="@+id/episodeTV"
+            tools:text="@string/episode" />
+
+        <TextView
+            android:id="@+id/episodeAirFate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintBaseline_toBaselineOf="@+id/airFateTV"
+            app:layout_constraintStart_toStartOf="@+id/episodeNumber"
+            tools:text="@string/air_fate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

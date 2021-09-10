@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_card_view"
+    android:layout_marginTop="@dimen/margin_card_view"
+    android:layout_marginEnd="@dimen/margin_card_view">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameEpTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/name"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/episodeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/type"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/locationName"
+            app:layout_constraintTop_toBottomOf="@+id/locationName" />
+
+        <TextView
+            android:id="@+id/airFateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/dimension"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/locationType"
+            app:layout_constraintTop_toBottomOf="@+id/locationType" />
+
+        <TextView
+            android:id="@+id/locationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintStart_toStartOf="@+id/nameEpTV"
+            app:layout_constraintTop_toBottomOf="@+id/nameEpTV"
+            tools:text="@string/name" />
+
+        <TextView
+            android:id="@+id/locationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintStart_toStartOf="@+id/episodeTV"
+            app:layout_constraintTop_toBottomOf="@+id/episodeTV"
+            tools:text="@string/type" />
+
+        <TextView
+            android:id="@+id/locationDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintStart_toStartOf="@+id/airFateTV"
+            app:layout_constraintTop_toBottomOf="@+id/airFateTV"
+            tools:text="@string/dimension" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

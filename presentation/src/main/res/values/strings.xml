@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">RNM</string>
+    <string name="episode">episode</string>
+    <string name="location">location</string>
+    <string name="personage">personage</string>
+    <string name="name">Name:</string>
+    <string name="species">Species:</string>
+    <string name="status">Status:</string>
+    <string name="gender">Gender:</string>
+    <string name="type">Type:</string>
+    <string name="dimension">Dimension:</string>
+    <string name="air_fate">Air Fate:</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="episode_e">Episode:</string>
+    <string name="origin">Origin:</string>
+    <string name="location_l">Loc:</string>
+    <string name="filter">Filter</string>
+    <string name="hint_name">hint name</string>
+    <string name="ok">ok</string>
+    <string name="name_search">name search</string>
+    <string name="test">Any</string>
+
+    <string-array name="statuses">
+        <item>Any</item>
+        <item>Alive</item>
+        <item>Dead</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>Any</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Genderless</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="species">
+        <item>Any</item>
+        <item>Human</item>
+        <item>Alien</item>
+        <item>Humanoid</item>
+        <item>Robot</item>
+        <item>Animal</item>
+        <item>Mythological Creature</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="seasons">
+        <item>All</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="location_types">
+        <item>Any</item>
+        <item>Planet</item>
+        <item>Cluster</item>
+        <item>Dimension</item>
+        <item>Space station</item>
+        <item>Microverse</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="season">season</string>
+    <string name="title_activity_splash">Rick And Morty</string>
+    <string name="internet_error">Нет доступа к интернету, убедитесь что интернет есть и перезапустите приложение</string>
+
+</resources>

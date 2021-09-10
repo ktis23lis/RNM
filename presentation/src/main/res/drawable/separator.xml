@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size android:height="@dimen/separator_tools"/>
+
+    <corners android:bottomRightRadius="@dimen/separator_tools"
+        android:bottomLeftRadius="@dimen/separator_tools"
+        android:topLeftRadius="@dimen/separator_tools"
+        android:topRightRadius="@dimen/separator_tools"/>
+</shape>

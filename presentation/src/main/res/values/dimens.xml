@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_card_view">6dp</dimen>
+    <dimen name="item_width">170dp</dimen>
+    <dimen name="image_height">250dp</dimen>
+    <dimen name="image_detail">200dp</dimen>
+    <dimen name="image_detail_height">300dp</dimen>
+    <dimen name="margin_top">16dp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="separator_tools">10dp</dimen>
+    <dimen name="spinner_width">200dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+</resources>

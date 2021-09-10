@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/back" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/personageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_top"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            tools:text="@string/name" />
+
+        <ImageView
+            android:id="@+id/personageImage"
+            android:layout_width="@dimen/image_detail"
+            android:layout_height="@dimen/image_detail"
+            android:layout_marginTop="@dimen/margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personageName" />
+
+        <TextView
+            android:id="@+id/personageStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintStart_toStartOf="@+id/personageName"
+            app:layout_constraintTop_toBottomOf="@+id/personageImage"
+            tools:text="@string/status" />
+
+        <TextView
+            android:id="@+id/personageGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_80"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintBaseline_toBaselineOf="@+id/personageStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/gender" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@color/rick_and_morty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personageGender" />
+
+        <TextView
+            android:id="@+id/specieTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:text="@string/species"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/personageStatus"
+            app:layout_constraintTop_toBottomOf="@+id/personageStatus" />
+
+        <TextView
+            android:id="@+id/personageSpecies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintBaseline_toBaselineOf="@+id/specieTV"
+            app:layout_constraintStart_toStartOf="@+id/personageImage"
+            tools:text="@string/species" />
+
+        <TextView
+            android:id="@+id/originTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/origin"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/specieTV"
+            app:layout_constraintTop_toBottomOf="@+id/specieTV" />
+
+        <TextView
+            android:id="@+id/personageOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintBaseline_toBaselineOf="@+id/originTV"
+            app:layout_constraintStart_toStartOf="@+id/personageSpecies"
+            tools:text="@string/origin" />
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/location_l"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_color"
+            app:layout_constraintStart_toStartOf="@+id/originTV"
+            app:layout_constraintTop_toBottomOf="@+id/originTV" />
+
+        <TextView
+            android:id="@+id/personageLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/rick_and_morty_text_data_color"
+            app:layout_constraintBaseline_toBaselineOf="@+id/locationTV"
+            app:layout_constraintStart_toStartOf="@+id/personageOrigin"
+            tools:text="@string/location_l" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/personageDetailRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personageLocation"
+            tools:listitem="@layout/episode_list_item" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:navigationIcon="@drawable/back" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_card_view"
+            android:layout_marginLeft="@dimen/margin_card_view"
+            android:orientation="horizontal"
+            android:theme="@style/MyStyle">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_card_view"
+                android:layout_marginLeft="@dimen/margin_card_view"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:theme="@style/MyStyle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="@string/name"
+                    android:textColor="@color/rick_and_morty_text_color"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type"
+                    android:textColor="@color/rick_and_morty_text_color"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dimension"
+                    android:textColor="@color/rick_and_morty_text_color"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_card_view"
+                android:layout_marginLeft="@dimen/margin_card_view"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:theme="@style/MyStyle">
+
+                <TextView
+                    android:id="@+id/locationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:textColor="@color/rick_and_morty_text_data_color"
+                    android:textSize="@dimen/text_size"
+                    tools:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/locationType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rick_and_morty_text_data_color"
+                    android:textSize="@dimen/text_size"
+                    tools:text="@string/type" />
+
+                <TextView
+                    android:id="@+id/locationDimension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/rick_and_morty_text_data_color"
+                    android:textSize="@dimen/text_size"
+                    tools:text="@string/dimension" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/locationDetailRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/personage_list_item" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

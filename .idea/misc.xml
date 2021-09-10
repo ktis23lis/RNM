@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.11927083333333334" />
+        <entry key="presentation/src/main/res/drawable/ic_launcher_background.xml" value="0.29444444444444445" />
+        <entry key="presentation/src/main/res/layout/activity_main.xml" value="0.34791666666666665" />
+        <entry key="presentation/src/main/res/layout/activity_splash.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/activity_splash2.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/content_splash.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/episode_list_item.xml" value="0.67" />
+        <entry key="presentation/src/main/res/layout/fragment_blank.xml" value="0.1671875" />
+        <entry key="presentation/src/main/res/layout/fragment_episode_details.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/fragment_episode_filter.xml" value="0.5" />
+        <entry key="presentation/src/main/res/layout/fragment_episode_list.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/fragment_first.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/fragment_location_details.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/fragment_location_filter.xml" value="0.67" />
+        <entry key="presentation/src/main/res/layout/fragment_location_list.xml" value="0.21574074074074073" />
+        <entry key="presentation/src/main/res/layout/fragment_personage_details.xml" value="0.25" />
+        <entry key="presentation/src/main/res/layout/fragment_personage_filter.xml" value="0.21574074074074073" />
+        <entry key="presentation/src/main/res/layout/fragment_personage_list.xml" value="0.17777777777777778" />
+        <entry key="presentation/src/main/res/layout/fragment_second.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/location_list_item.xml" value="0.3908701854493581" />
+        <entry key="presentation/src/main/res/layout/personage_list_item.xml" value="0.5" />
+        <entry key="presentation/src/main/res/layout/savepers.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/layout/test.xml" value="0.33" />
+        <entry key="presentation/src/main/res/layout/tetstpers.xml" value="0.33" />
+        <entry key="presentation/src/main/res/layout/xz.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/menu/action_menu.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/menu/bottom_menu_navigation.xml" value="0.32447916666666665" />
+        <entry key="presentation/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.29444444444444445" />
+        <entry key="presentation/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.29444444444444445" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
